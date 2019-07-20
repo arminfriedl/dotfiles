@@ -1,0 +1,6 @@
+" Add esc shortcut
+inoremap jk <Esc>
+
+" show documentation for current symbol
+eclipseuiaction eclipseshowdoc org.eclipse.ui.edit.text.showInformation
+nnoremap K   :eclipseshowdoc<cr>
