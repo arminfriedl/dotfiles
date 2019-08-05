@@ -61,6 +61,9 @@
 "wmctrl -a emacs"
   Mod4 + e
 
+"wmctrl -a eclipse"
+  Mod4 + w
+
 #"xterm -geom 50x20+20+20"
 #   Shift+Mod2+alt + s
 #
