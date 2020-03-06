@@ -1,6 +1,55 @@
-" Add esc shortcut
-inoremap jk <Esc>
+imap jk <esc>
 
-" show documentation for current symbol
+nmap s <Plug>(sneak_s)
+nmap S <Plug>(sneak_S)
+nmap ; <Plug>(sneak-next)
+nmap , <Plug>(sneak-prev)
+vmap s <Plug>(sneak_s)
+vmap Z <Plug>(sneak_S)
+vmap ; <Plug>(sneak-next)
+vmap , <Plug>(sneak-prev)
+nmap f <Plug>(sneak_f)
+nmap F <Plug>(sneak_F)
+nmap t <Plug>(sneak_t)
+nmap T <Plug>(sneak_T)
+vmap f <Plug>(sneak_f)
+vmap F <Plug>(sneak_F)
+vmap t <Plug>(sneak_t)
+vmap T <Plug>(sneak_T)
+omap z <Plug>(sneak_s)
+omap Z <Plug>(sneak_S)
+
+eclipseaction runjunit org.eclipse.jdt.junit.junitShortcut.run
+nnoremap gjj :runjunit<cr> 
+
+eclipseaction runcoverage org.eclipse.eclemma.ui.junitShortcut.coverage
+nnoremap gjc :runcoverage<cr>
+
+eclipseuaction rundakarafinder dakara.eclipse.finder.plugin.commands.finderCommand
+nnoremap gff :rundakarafinder<cr>
+
+eclipseuiaction showviewservers org.eclipse.ui.views.showView(org.eclipse.ui.views.showView.viewId=org.eclipse.wst.server.ui.ServersView)
+nnoremap gvs :showviewservers<cr>
+
+eclipseuiaction showviewconsole org.eclipse.ui.views.showView(org.eclipse.ui.views.showView.viewId=org.eclipse.ui.console.ConsoleView)
+nnoremap gvc :showviewconsole<cr>
+
+eclipseuiaction showvieweditor org.eclipse.ui.window.activateEditor
+nnoremap gve :showvieweditor<cr>
+
+eclipseuiaction showview org.eclipse.ui.views.showView
+nnoremap gvv :showview<cr>
+
 eclipseuiaction eclipseshowdoc org.eclipse.ui.edit.text.showInformation
-nnoremap K   :eclipseshowdoc<cr>
+nnoremap K :eclipseshowdoc<cr>
+
+eclipseuiaction showperspectivejee org.eclipse.ui.perspectives.showPerspective(org.eclipse.ui.perspectives.showPerspective.perspectiveId=org.eclipse.jst.j2ee.J2EEPerspective)
+nnoremap gpp :showperspectivejee<cr>
+
+eclipseuiaction showperspectivedebug org.eclipse.ui.perspectives.showPerspective(org.eclipse.ui.perspectives.showPerspective.perspectiveId=org.eclipse.debug.ui.DebugPerspective)
+nnoremap gpd :showperspectivedebug<cr>
+
+"show quickfix menu
+eclipseuiaction eclipsequickfix org.eclipse.jdt.ui.edit.text.java.correction.assist.proposals
+nnoremap <backspace> :eclipsequickfix<cr>
+vnoremap <backspace> :eclipsequickfix<cr>
