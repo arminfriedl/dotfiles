@@ -67,6 +67,9 @@
 "wmctrl -a clion"
   Mod4 + c
 
+"wmctrl -a Spring Tool Suite 4"
+  Mod4 + s
+
 #"xterm -geom 50x20+20+20"
 #   Shift+Mod2+alt + s
 #

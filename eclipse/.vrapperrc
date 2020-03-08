@@ -25,8 +25,20 @@ nnoremap gjj :runjunit<cr>
 eclipseaction runcoverage org.eclipse.eclemma.ui.junitShortcut.coverage
 nnoremap gjc :runcoverage<cr>
 
-eclipseuaction rundakarafinder dakara.eclipse.finder.plugin.commands.finderCommand
-nnoremap gff :rundakarafinder<cr>
+"eclipseuaction rundakarafinder dakara.eclipse.finder.plugin.commands.finderCommand
+"nnoremap gff :rundakarafinder<cr>
+
+eclipseuiaction runopeneditor org.eclipse.ui.window.openEditorDropDown
+nnoremap gfe :runopeneditor<cr>
+
+eclipseuiaction runopentype org.eclipse.jdt.ui.navigate.open.type
+nnoremap gff :runopentype<cr>
+
+eclipseuiaction runopenresource org.eclipse.ui.navigate.openResource
+nnoremap gfr :runopenresource<cr>
+
+eclipseuiaction runopensearch org.eclipse.text.quicksearch.commands.quicksearchCommand
+nnoremap gfs :runopensearch<cr>
 
 eclipseuiaction showviewservers org.eclipse.ui.views.showView(org.eclipse.ui.views.showView.viewId=org.eclipse.wst.server.ui.ServersView)
 nnoremap gvs :showviewservers<cr>
