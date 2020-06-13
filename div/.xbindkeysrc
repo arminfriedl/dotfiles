@@ -52,23 +52,23 @@
 
 # Mod4 = win key
 # reload config file with xbindkeys --poll-rc
-"wmctrl -a firefox"
-  Mod4 + f
+"wmctrl -a 'Mozilla Firefox'"
+  Mod4 + shift + j
 
 "wmctrl -a terminal"
-  Mod4 + t
+  Mod4 + shift + i
 
 "wmctrl -a emacs"
-  Mod4 + e
+  Mod4 + shift + k
 
-"wmctrl -a eclipse"
-  Mod4 + w
+"wmctrl -a 'Spring Tool Suite 4'"
+  Mod4 + shift + l
 
-"wmctrl -a clion"
-  Mod4 + c
+"wmctrl -xa Spotify"
+  Mod4 + shift + u
 
-"wmctrl -a Spring Tool Suite 4"
-  Mod4 + s
+"wmctrl -a 'Firefox Developer Edition'"
+  Mod4 + shift + o
 
 #"xterm -geom 50x20+20+20"
 #   Shift+Mod2+alt + s
