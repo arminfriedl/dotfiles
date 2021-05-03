@@ -1,0 +1,5 @@
+# Switch set capslock to ctrl
+setxkbmap -option "ctrl:nocaps"
+
+alias xclip='xclip -sel c'
+alias pd='podman'
