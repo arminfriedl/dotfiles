@@ -1,4 +1,0 @@
-# Install pyenv via https://github.com/pyenv/pyenv-installer
-export PATH="/home/armin/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"

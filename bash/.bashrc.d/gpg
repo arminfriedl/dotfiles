@@ -1,4 +1,5 @@
 # GPG as SSH agent
 # see: https://opensource.com/article/19/4/gpg-subkeys-ssh
-export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+export SSH_AUTH_SOCK
 gpgconf --launch gpg-agent

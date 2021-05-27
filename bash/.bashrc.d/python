@@ -1,0 +1,23 @@
+# Pyenv
+# Install pyenv via https://github.com/pyenv/pyenv-installer
+if [[ -d "$HOME/.pyenv/bin" ]]; then
+    export PATH="/home/armin/.pyenv/bin:$PATH"
+    eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)"
+fi
+
+# Poetry
+## Install poetry via https://python-poetry.org/docs/#installation
+if [[ -d "$HOME/.pyenv/bin" ]]; then
+    export PATH="$HOME/.poetry/bin:$PATH"
+fi
+
+# Virtualenvwrapper
+## Install via `dnf install virtualenvwrapper`
+if [[ -d "/usr/local/bin/virtualenvwrapper.sh" ]]; then
+    WORKON_HOME="$HOME/.virtualenvs"
+    PROJECT_HOME="$HOME/dev"
+    export WORKON_HOME
+    export PROJECT_HOME
+    source "$(which virtualenvwrapper.sh)"
+fi
