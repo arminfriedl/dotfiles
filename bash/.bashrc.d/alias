@@ -1,0 +1,2 @@
+alias xclip='xclip -sel c'
+alias pd='podman'
