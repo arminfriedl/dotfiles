@@ -6,7 +6,18 @@ let g:mapleader = ","
 
 inoremap jk <Esc>
 
+" ys, cs, ds, S
 set surround
+set commentary
+" argument text objects: aa, ia
+set argtextobj
+" requires https://plugins.jetbrains.com/plugin/13360-ideavim-easymotion/
+set easymotion
+" turn off visual bell
+set visualbell
+" relative numbers with absolute number for current line
+set relativenumber
+set number
 
 """ Idea specific settings ------------------
 set ideajoin
@@ -50,7 +61,16 @@ map <Leader>hm <Action>(MethodHierarchy)
 
 map <Leader>o <Action>(FileStructurePopup)
 
-map gc <Action>(GotoClass)
-map == <Action>(ReformatCode)
+map <Leader>gc <Action>(GotoClass)
+map <Leader>gf <Action>(GotoFile)
+map <Leader>gt <Action>(GotoTest)
+
+map <C-h> <Action>(QuickJavaDoc)
+
+" formatting
+nnoremap == <Action>(ReformatCode)
+vnoremap == <Action>(ReformatCode)
+nnoremap -- <Action>(OptimizeImports)
+vnoremap -- <Action>(OptimizeImports)
 
 " Find more examples here: https://jb.gg/share-ideavimrc
