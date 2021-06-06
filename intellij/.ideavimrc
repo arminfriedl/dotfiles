@@ -1,4 +1,56 @@
-source ~/.vimrc
+"" Source your .vimrc
+"source ~/.vimrc
 
-let mapleader=","
-set easymotion
+let mapleader = ","
+let g:mapleader = ","
+
+inoremap jk <Esc>
+
+set surround
+
+""" Idea specific settings ------------------
+set ideajoin
+set ideastatusicon=gray
+set idearefactormode=keep
+
+"" -- Suggested options --
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=5
+
+" Do incremental searching.
+set incsearch
+set smartcase
+
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+
+
+"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+"" Map \r to the Reformat Code action
+"map \r <Action>(ReformatCode)
+
+"" Map <leader>d to start debug
+"map <leader>d <Action>(Debug)
+
+"" Map \b to toggle the breakpoint on the current line
+"map \b <Action>(ToggleLineBreakpoint)
+
+
+
+map <Leader>rr <Action>(RenameElement)
+
+map <Leader>fu <Action>(ShowUsages)
+map <Leader>fU <Action>(FindUsages)
+
+map <Leader>hh <Action>(HierarchyGroup)
+map <Leader>hc <Action>(CallHierarchy)
+map <Leader>ht <Action>(TypeHierarchy)
+map <Leader>hm <Action>(MethodHierarchy)
+
+map <Leader>o <Action>(FileStructurePopup)
+
+map gc <Action>(GotoClass)
+map == <Action>(ReformatCode)
+
+" Find more examples here: https://jb.gg/share-ideavimrc
