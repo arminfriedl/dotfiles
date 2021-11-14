@@ -61,16 +61,20 @@ map <Leader>hm <Action>(MethodHierarchy)
 
 map <Leader>o <Action>(FileStructurePopup)
 
+map <Leader>ga <Action>(GotoAction)
 map <Leader>gc <Action>(GotoClass)
 map <Leader>gf <Action>(GotoFile)
 map <Leader>gt <Action>(GotoTest)
+map <Leader>gi <Action>(GotoImplementation)
+map <Leader>gr <Action>(RecentFiles)
 
 map <C-h> <Action>(QuickJavaDoc)
+map K <Action>(QuickJavaDoc)
 
 " formatting
-nnoremap == <Action>(ReformatCode)
-vnoremap == <Action>(ReformatCode)
-nnoremap -- <Action>(OptimizeImports)
-vnoremap -- <Action>(OptimizeImports)
+nmap == <Action>(ReformatCode)
+vmap == <Action>(ReformatCode)
+nmap -- <Action>(OptimizeImports)
+vmap -- <Action>(OptimizeImports)
 
 " Find more examples here: https://jb.gg/share-ideavimrc
